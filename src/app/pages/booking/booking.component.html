@@ -1,0 +1,62 @@
+<!-- CAJA DE WELCOME -->
+<section class="section section-lg section-main-bunner section-main-bunner-filter text-center">
+    <div class="main-bunner-img" style="background-image: url(https://maltium.com/wp-content/uploads/2018/04/restaurante-elegantes-cerveza-premium.jpg); background-size: cover;"></div>
+    <div class="main-bunner-inner">
+      <div class="container">
+        <div class="box-default">
+          <h1 class="box-default-title">RESERVAS</h1>
+          <div class="box-default-decor"></div>
+          <!-- <p class="big box-default-text"> La tradición italiana hecha restaurante</p> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="bg-gray-1">
+    <section class="section-transform-top">
+      <div class="container">
+        <div class="box-booking">
+          <form class="rd-form rd-mailform booking-form">
+            <div>
+              <p class="booking-title">Nombre</p>
+              <div class="form-wrap">
+                <input class="form-input" id="booking-name" type="text" name="name" data-constraints="@Required">
+                <label class="form-label" for="booking-name">Tu Nombre</label>
+              </div>
+            </div>
+            <div>
+              <p class="booking-title">Teléfono</p>
+              <div class="form-wrap">
+                <input class="form-input" id="booking-phone" type="text" name="phone" data-constraints="@Numeric">
+                <label class="form-label" for="booking-phone">Tu Número de Teléfono</label>
+              </div>
+            </div>
+            <div>
+              <p class="booking-title">Fecha</p>
+              <div class="form-wrap form-wrap-icon"><span class="icon mdi mdi-calendar-text"></span>
+                <input class="form-input" id="booking-date" type="text" name="date" data-constraints="@Required" data-time-picker="date">
+              </div>
+            </div>
+            <div>
+              <p class="booking-title">no. de Personas</p>
+              <div class="form-wrap">
+                <select data-placeholder="2">
+                  <option label="placeholder"></option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <button class="button button-lg button-gray-600" type="submit">Consultar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
