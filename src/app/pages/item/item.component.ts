@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { InfoPaginaService } from 'src/app/services/info-pagina.service';
+import { MenuService } from 'src/app/services/menu.service';
 
 @Component({
   selector: 'app-item',
@@ -7,7 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ItemComponent implements OnInit {
 
-  constructor() { }
+  constructor( public infoService: InfoPaginaService,
+               public menuService: MenuService ) { }
 
   ngOnInit(): void {
   }

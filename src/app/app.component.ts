@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { InfoPaginaService } from './services/info-pagina.service';
+import { MenuService } from './services/menu.service';
 
 
 @Component({
@@ -10,7 +11,8 @@ import { InfoPaginaService } from './services/info-pagina.service';
 export class AppComponent {
   
 
-  constructor( public infoPaginaService: InfoPaginaService ){
+  constructor( public infoPaginaService: InfoPaginaService,
+               public menuService: MenuService){
 
   }
 }
