@@ -37,7 +37,7 @@ import { BookingDbService } from './services/booking-db.service';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    AngularFireModule.initializeApp( environment.firebaseConfig),
+    AngularFireModule.initializeApp( environment.firebaseConfig ),
     AngularFirestoreModule,
     ReactiveFormsModule
   ],
