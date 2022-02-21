@@ -20,6 +20,7 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { environment } from 'src/environments/environment';
 
 import { DataDbService } from './services/data-db.service';
+import { BookingDbService } from './services/booking-db.service';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,7 @@ import { DataDbService } from './services/data-db.service';
     AngularFirestoreModule,
     ReactiveFormsModule
   ],
-  providers: [DataDbService],
+  providers: [DataDbService,BookingDbService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
