@@ -12,6 +12,15 @@ import { ItemComponent } from './pages/item/item.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { BookingComponent } from './pages/booking/booking.component';
 
+import { ReactiveFormsModule } from '@angular/forms';
+
+//firebase
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { environment } from 'src/environments/environment';
+
+import { DataDbService } from './services/data-db.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,9 +35,12 @@ import { BookingComponent } from './pages/booking/booking.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularFireModule.initializeApp( environment.firebaseConfig),
+    AngularFirestoreModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [DataDbService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

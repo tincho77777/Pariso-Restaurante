@@ -65,22 +65,22 @@
         <div class="col-md-9 col-lg-7">
           <h3>Ponte en contacto</h3>
           <!-- RD Mailform-->
-          <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+          <form [formGroup]="contactForm" (ngSubmit)="onSaveForm()" class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
             <div class="form-wrap">
-              <input class="form-input" id="contact-name" type="text" name="name" data-constraints="@Required">
-              <label class="form-label" for="contact-name">Tu Nombre</label>
+              <input class="form-input" id="contact-name" type="text" name="name" data-constraints="@Required" placeholder="Nombre" formControlName="name">
+              <label class="form-label" for="contact-name"></label>
             </div>
             <div class="form-wrap">
-              <input class="form-input" id="contact-email" type="email" name="email" data-constraints="@Email @Required">
-              <label class="form-label" for="contact-email">E-mail</label>
+              <input class="form-input" id="contact-email" type="email" name="email" data-constraints="@Email @Required" placeholder="E-mail" formControlName="email">
+              <label class="form-label" for="contact-email"></label>
             </div>
             <div class="form-wrap">
-              <input class="form-input" id="contact-phone" type="text" name="phone" data-constraints="@Numeric">
-              <label class="form-label" for="contact-phone">Teléfono</label>
+              <input class="form-input" id="contact-phone" type="number" name="phone" data-constraints="@Numeric" placeholder="Teléfono" formControlName="phone">
+              <label class="form-label" for="contact-phone"></label>
             </div>
             <div class="form-wrap">
-              <label class="form-label" for="contact-message">Mensaje</label>
-              <textarea class="form-input" id="contact-message" name="message" data-constraints="@Required"></textarea>
+              <label class="form-label" for="contact-message"></label>
+              <textarea class="form-input" id="contact-message" name="message" data-constraints="@Required" placeholder="Mensaje" formControlName="message"></textarea>
             </div>
             <div class="row justify-content-center">
               <div class="col-12 col-sm-7 col-lg-5">

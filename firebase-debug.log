@@ -1,0 +1,27 @@
+[debug] [2022-02-20T18:05:22.877Z] ----------------------------------------------------------------------
+[debug] [2022-02-20T18:05:22.879Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\polid\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-02-20T18:05:22.880Z] CLI Version:   10.2.1
+[debug] [2022-02-20T18:05:22.880Z] Platform:      win32
+[debug] [2022-02-20T18:05:22.880Z] Node Version:  v16.13.2
+[debug] [2022-02-20T18:05:22.881Z] Time:          Sun Feb 20 2022 15:05:22 GMT-0300 (hora estándar de Argentina)
+[debug] [2022-02-20T18:05:22.881Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-02-20T18:05:22.891Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-02-20T18:05:22.891Z] > authorizing via signed-in user (tinchoa02@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\polid\OneDrive\Escritorio\restaurante
+
+[debug] [2022-02-20T18:08:11.065Z] Error: kill ENOSYS
+    at process.kill (node:internal/process/per_thread:215:13)
+    at process.listener (C:\Users\polid\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\signal-exit\index.js:95:15)
+    at process.emit (node:events:390:28)
+[error] 
+[error] Error: An unexpected error has occurred.
