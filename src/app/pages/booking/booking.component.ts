@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { BookingDbService } from 'src/app/services/booking-db.service';
 import { FormControl, FormGroup } from '@angular/forms';
 
+
+
 @Component({
   selector: 'app-booking',
   templateUrl: './booking.component.html',
@@ -38,7 +40,7 @@ export class BookingComponent implements OnInit {
   onSaveForm(){
   
     this.bookData.saveBooking( this.bookingForm.value );
-    
+
   }
 
 }
