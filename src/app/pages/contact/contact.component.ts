@@ -46,6 +46,7 @@ export class ContactComponent implements OnInit {
     // }
 
     this.dbData.saveMessage(this.contactForm.value);
+    alert('Mensaje enviado!')
   } 
 
 }

@@ -41,6 +41,8 @@ export class BookingComponent implements OnInit {
   
     this.bookData.saveBooking( this.bookingForm.value );
 
+    alert('Nos contactaremos con usted para confirmar su reserva!')
+
   }
 
 }
