@@ -23,14 +23,14 @@
             <div>
               <p class="booking-title">Nombre</p>
               <div class="form-wrap">
-                <input class="form-input" id="booking-name" type="text" name="name" data-constraints="@Required" formControlName="name">
+                <input class="form-input" id="booking-name" type="text" name="name" data-constraints="@Required" formControlName="name" required >
                 <label class="form-label" for="booking-name"></label>
               </div>
             </div>
             <div>
               <p class="booking-title">Teléfono</p>
               <div class="form-wrap">
-                <input class="form-input" id="booking-phone" type="number" name="phone" data-constraints="@Numeric" formControlName="phone">
+                <input class="form-input" id="booking-phone" type="number" name="phone" data-constraints="@Numeric" formControlName="phone" required>
                 <label class="form-label" for="booking-phone"></label>
               </div>
             </div>
@@ -38,13 +38,13 @@
               <p class="booking-title">Fecha</p>
               <div class="form-wrap form-wrap-icon">
                 <!-- <span class="icon mdi mdi-calendar-text"></span> -->
-                <input class="form-input" id="booking-date" type="text" name="date" data-constraints="@Required" data-time-picker="date" formControlName="date" >
+                <input class="form-input" id="booking-date" type="text" name="date" data-constraints="@Required" data-time-picker="date" formControlName="date" required >
               </div>
             </div>
             <div>
               <p class="booking-title">Personas</p>
               <div class="form-wrap">
-                <input class="form-input" id="booking-name" type="text" name="personas" data-constraints="@Required" formControlName="personas">
+                <input class="form-input" id="booking-name" type="text" name="personas" data-constraints="@Required" formControlName="personas" required>
                 <label class="form-label" for="booking-name"></label>
               </div>
               <!-- <div class="form-wrap">
